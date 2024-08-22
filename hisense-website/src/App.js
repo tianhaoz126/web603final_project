@@ -1,15 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Home from './Home';
-import User from './User';
-import Grocery from './Grocery';
+import Home from './components/Home';
+import User from './components/User';
+import Grocery from './components/Grocery';
+import logo from './logo.svg';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>Hisense Refrigerator AI Website</h1>
+          <img src={logo} alt="Hisense Logo" className="App-logo" />
+          <h1>Hisense Refrigerator AI</h1>
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
